@@ -1,0 +1,114 @@
+/*CSS untuk file dicoding*/
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+
+/*header*/
+header {
+  display: inline;
+}
+
+header .jumbotron {
+  background-color: #00c8eb;
+  text-align: center;
+  font-size: larger;
+  padding: 75px;
+  color: white;
+}
+
+header nav {
+  background-color: #00a2c6;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+header nav li {
+  display: inline-block;
+}
+
+header nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  font-weight: bold;
+}
+
+/*main*/
+main {
+  padding: 20px;
+}
+
+main .card {
+  box-shadow: 0 4px 8px 0px rgba(87, 87, 87, 0.856);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 25px;
+}
+
+main h2,
+h3 {
+  color: #00a2c6;
+  margin-bottom: 20px;
+}
+
+main h3 {
+  margin-top: 20px;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+/*footer*/
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #00a2c6;
+  font-weight: bold;
+  padding: 30px;
+}
+
+/*floating*/
+#content {
+  width: 75%;
+  float: left;
+}
+aside {
+  float: right;
+  width: 25%;
+}
+
+main {
+  overflow: auto;
+}
+
+/*media query*/
+@media screen and (max-width: 1150px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
